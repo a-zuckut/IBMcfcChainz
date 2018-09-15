@@ -33,11 +33,17 @@ for t in range(time):
     #   locations?
 
     # CREATE ALGORITHM HERE
-    # ---
-    # ---
-    # ---
-    # ---
-    # ---
+    for i in range(num_nodes):
+        '''
+            1. at the start, iterate through locations and decrement all time values
+            2. For each node, first determine what we need, (not coming yet) in transit, (t>0) and have(t=0).
+            NOTE: locations[id] will contain the amount of incoming items and at what time
+            3. starting at the node, BFS to find as many items as you can get as possible, keep running track of what we need,
+                    and add to locations when you find things to obtain - in order of priority
+                            (all priority 1, then 2, then 3, etc)
+            NOTE: store incoming resources as (amount, time) in locations[]
+            4. Figure out what to do with things that you have failed to find in general - if so - create a beacon maybe?
+        '''
 
 def getData(file):
     file = open(file)
