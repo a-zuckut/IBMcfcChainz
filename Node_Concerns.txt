@@ -1,0 +1,39 @@
+medical items:
+
+Insulin
+Glucagon	(Treatment of hypoglycaemia)
+Salbutamol inhaler	(Treatment of acute asthmatic attack )
+Medical gas mixture of 50% nitrous oxide and 50% oxygen (Pain relief in emergency rescue situations)
+Glycerol trinitrate	(Treatment of severe angina attack )
+
+
+Higher scale concerns:
+
+How do we get the data?
+Texts
+drone data collection
+social media natural languge processing
+HAM radio for emergency communicaitons?
+
+How do we move the supplies?
+Drone supply drop
+cyclists
+ideally trucks
+
+How can we use the data?
+
+Identify dead zones that need more resources due to transit issues
+Identify what supplies are needed most and where in real time
+Adapt the nodes to a distribution problem. (Future implementation)
+
+
+Individual Emergencies:
+Drones can identify individual emergencies if the individuals cannot reach a node
+Otherwise, node communication can quickly identify the areas that require high emergency medical response
+
+
+OUTPUT: 
+Map of demand to change incoming supplies
+Map of problem areas (hot spots) where more personell are required
+	This output can be adapted to an optimal path clear problem
+
