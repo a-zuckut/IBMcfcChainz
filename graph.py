@@ -8,6 +8,8 @@ adjacency = open('node_adjacency.in')
 num_nodes = int(num.readline().strip())
 
 matrix = numpy.zeros((num_nodes,num_nodes))
+
+# consider if we want to store things here or not
 locations = [dict() for i in range(num_nodes)]
 
 # Get adjacency list
@@ -21,7 +23,21 @@ for i in range(num_nodes):
 time = 10
 for t in range(time):
     # iteration of the steps
-    current_items, extra_items = getData('step_%3d'%t)
+    current_items, no_longer_needed_items = getData('step_%3d'%t)
+
+    # HARDCORE LOGIC
+    # Inputs:
+    #   current items: list of needed items with (id, amount, time, priority)
+    #   no longer needed items: list of extra items with (id, amount)
+    #   map of adjacency list in matrix which connects location
+    #   locations?
+
+    # CREATE ALGORITHM HERE
+    # ---
+    # ---
+    # ---
+    # ---
+    # ---
 
 def getData(file):
     file = open(file)
