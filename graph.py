@@ -30,7 +30,8 @@ def getData(file):
     for x in range(num_nodes):
         temp = file.readline().split(' ')
         index = 0
-        for number in temp[index++]:
+        len = temp[index]
+        for number in len:
             id = temp[index * number + 0]
             amount = temp[index * number + 1]
             time_needed = temp[index * number + 2]
@@ -41,7 +42,8 @@ def getData(file):
     for x in range(num_nodes):
         temp = file.readline().split(' ')
         index = 0
-        for number in temp[index++]:
+        len = temp[index]
+        for number in len:
             id = temp[index * number + 0]
             amount = temp[index * number + 1]
             extra.append((id,amount));
